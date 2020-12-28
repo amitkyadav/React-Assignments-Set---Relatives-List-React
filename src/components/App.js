@@ -5,21 +5,21 @@ export default function App() {
   const list = [
     {
       name: "rajeeb",
-      relativeList: "relativeListItem1"
+      rel: "relativeListItem1"
     },
     {
       name: "vipin",
-      relativeList: "relativeListItem2"
+      rel: "relativeListItem2"
     },
     {
       name: "sumit",
-      relativeList: "relativeListItem3"
+      rel: "relativeListItem3"
     }
   ];
   return (
-    <ol>
+    <ol key="relativeList">
       {list.map((l) => (
-        <List l={l} key={l.relativeList} />
+        <List key={l.rel} l={l} />
       ))}
     </ol>
   );
