@@ -19,7 +19,7 @@ export default function App() {
   return (
     <ol key="relativeList">
       {list.map((l) => (
-        <List key={l.rel} l={l} />
+        <List l={l} />
       ))}
     </ol>
   );
